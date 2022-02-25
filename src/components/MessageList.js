@@ -1,8 +1,16 @@
 import React from 'react'
+import { makeStyles } from '@material-ui/core'
+
+const useStyles = makeStyles({
+  root: {
+    gridRow: 1,
+  }
+})
 
 const MessageList = () => {
+  const classes = useStyles
   return (
-    <div>MessageList</div>
+    <div className={classes.root}>MessageList</div>
   )
 }
 
